@@ -1,0 +1,177 @@
+.container_nav {
+    display: flex;
+
+    input {
+        margin-right: 40px;
+        display: none;
+
+        &:checked~label .hamburguer {
+            transform: rotate(135deg);
+        }
+
+        &:checked~label .hamburguer:before {
+            transform: rotate(180deg);
+            top: 0;
+        }
+
+        &:checked~label .hamburguer:after {
+            transform: rotate(270deg);
+            bottom: 0;
+        }
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+
+        .menu {
+            cursor: pointer;
+            display: none;
+            width: 40px;
+            height: 40px;
+            align-self: flex-end;
+
+            .hamburguer {
+
+                background-color: #e5914e;
+                position: relative;
+                display: block;
+                width: 30px;
+                height: 2px;
+                top: 29px;
+                left: 20px;
+                transition: 0.5s ease-in-out;
+
+                &::before,
+                &::after {
+                    background-color: #e5914e;
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    transition: 0.7s ease-in-out;
+                }
+
+                &::before {
+                    top: -10px;
+                }
+
+                &::after {
+                    bottom: -10px;
+
+                }
+            }
+        }
+    }
+
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        transition: 0.4s ease-in-out;
+    }
+
+
+    a:hover {
+        color: #e5914e;
+    }
+
+
+    .navigation {
+        display: flex;
+        margin-right: 0.5vw;
+        align-items: center;
+        li {
+            margin-right: 1vw;
+        }
+    }
+
+    .navigation li:nth-child(1) {
+        list-style: disc;
+        color: #e5914e;
+        height: max-content;
+    }
+
+    .navigation li:nth-child(1):hover {
+        color: rgb(255, 255, 255);
+
+    }
+
+    .navigation li .home:hover {
+        color: rgb(255, 255, 255);
+
+    }
+
+    @media (min-width:1440px) {
+       a {
+        font-size: 1.7rem;
+       }
+      
+    }
+
+    @media (max-width: 900px) {
+
+        .navigation li:nth-child(1) {
+            list-style: none  ;
+            height: auto;
+        }
+    
+
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1;
+
+
+        label {
+            position: fixed;
+
+            .menu {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                display: flex !important;
+
+            }
+
+        }
+
+
+        .navigation, ul {
+            display: none;
+            width: 150px;
+            background-color: #fff;
+            padding: 20px 0px;
+            z-index: 2;
+           
+
+        }
+
+        input:checked~.navigation {
+            position: fixed;
+            display: block;
+            z-index: 100;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 10vh;
+            right: -10px;
+
+            li {
+                a {
+                    display: block;
+                    text-align: center;
+                    padding: 10px;
+
+                }
+            }
+        }
+    }
+
+    // .navigation li:last-child {
+    //     border-right: none;
+    //     margin-right: 0;
+    //     padding-right: 0;
+    // }
+
+   
+}

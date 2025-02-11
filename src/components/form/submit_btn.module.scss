@@ -1,0 +1,31 @@
+.btn_form {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 0.3vh;
+    border: 1px solid #e5914e;
+    background: linear-gradient(87deg, rgba(229, 145, 78, 0.6559873949579832) 9%, rgba(0, 0, 0, 0.01) 45%);
+    color: #fff;
+    color: #fff;
+    transition: 0.8s ease-in-out;
+    font-weight: 600;
+    outline: 1px solid;
+    outline-color: #e5914e;
+    outline-offset: 0px;
+    text-shadow: none;
+
+
+}
+
+.btn_form:hover {
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    background-color: #e5914e;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+
+}
+
+.margin_top {
+    margin-top: 5px;
+}

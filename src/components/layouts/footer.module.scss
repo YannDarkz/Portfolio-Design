@@ -1,0 +1,34 @@
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        display: block;
+        height: 2px;
+        width: 40%;
+        background-color: #e5914e;
+    }
+
+    @media (max-width:640px) {
+
+        span {    
+            width: 38%;
+        }
+    }
+
+    @media (max-width:460px) {
+
+        span {    
+            width: 35%;
+        }
+    }
+
+    @media (max-width:360px) {
+
+        span {    
+            width: 33%;
+        }
+    }
+
+}

@@ -1,0 +1,156 @@
+.container_feedback {
+    margin-bottom: 5vh;
+}
+
+.container_feedback .title_feedback {
+    display: flex;
+    color: #e5914e;
+    gap: 1%;
+    align-items: center;
+    margin-bottom: 0.3vh;
+}
+
+.container_feedback .title_feedback p {
+    width: 6%;
+    font-size: 1.2rem;
+}
+
+.container_feedback .title_feedback span {
+    width: 93%;
+    height: 2px;
+    background-color: #e5914e;
+}
+
+.card_feedback {
+    width: 99%;
+    border: 1px solid #e5914e;
+    padding: 1.5vh 5vw;
+    border-radius: 1rem;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(218deg, rgba(0, 0, 0, 1) 68%, rgba(229, 145, 78, 1) 100%),
+        linear-gradient(139deg, rgba(0, 0, 0, 1) 78%, rgba(229, 145, 78, 1) 100%);
+    color: #fff;
+}
+
+.card_feedback p {
+    margin-bottom: 2vh;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    text-align: justify;
+
+}
+
+.card_feedback h3 {
+    text-align: start;
+    margin: 0 0 1vh 0 !important;
+    color: #e5914e;
+    font-size: 1.7rem;
+}
+
+.container_feedback .swiper {
+    padding: 0;
+}
+
+.container_feedback .swiper-slide {
+    height: 30vh;
+    margin: 0;
+    display: flex;
+}
+
+.container_feedback .swiper-button-prev,
+.container_feedback .swiper-button-next {
+    margin-top: -15px;
+}
+
+@media (max-width:920px) {
+    .container_feedback .title_feedback p {
+        width: 8%;
+    }
+
+    .container_feedback .title_feedback span {
+        width: 91%;
+    }
+
+    .card_feedback p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .container_feedback .title_feedback p {
+        width: 10%;
+    }
+
+    .container_feedback .title_feedback span {
+        width: 89%;
+    }
+
+    .card_feedback p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:600px) {
+    .container_feedback .title_feedback p {
+        width: 13%;
+    }
+
+    .container_feedback .title_feedback span {
+        width: 86%;
+    }
+
+    .card_feedback p {
+        font-size: 1.1rem;
+        padding: 0 2rem;
+    }
+
+    .card_feedback h3 {
+        margin-left: 4vw;
+    }
+
+}
+
+@media (max-width:470px) {
+    .container_feedback .title_feedback p {
+        width: 17%;
+    }
+
+    .container_feedback .title_feedback span {
+        width: 82%;
+    }
+
+    .card_feedback p {
+        padding-top: 1rem;
+        letter-spacing: 1px;
+    }
+}
+
+
+@media (max-width:380px) {
+    .container_feedback .title_feedback p {
+        width: 20%;
+    }
+
+    .container_feedback .title_feedback span {
+        width: 79%;
+    }
+
+}
+
+@media (min-width:1920px) {
+
+    .card_feedback p {
+        font-size: 1.5rem;
+    }
+
+    .card_feedback h3 {
+        text-align: start;
+        font-size: 1.8rem;
+    }
+
+
+
+}
